@@ -16,6 +16,7 @@ path = "src/lib.rs"
 
 [build-dependencies]
 pkg-config = "0.3.*"
+bindgen = "0.53.1"
 
 [dev-dependencies]
 capabilities = "0.2.*"

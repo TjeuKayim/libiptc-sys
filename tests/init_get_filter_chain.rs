@@ -35,7 +35,7 @@ fn can_get_chainname() {
     unsafe {
         let h: *mut xtc_handle;
         h = libiptc_sys::iptc_init(CString::new("filter").unwrap().as_ptr());
-        let chain: xt_chainlabel = libiptc_sys::iptc_first_chain(h);
+        let chain = libiptc_sys::iptc_first_chain(h);
         assert!(!(chain.is_null()));
         let rust_chain = CStr::from_ptr(chain).to_string_lossy();
         libiptc_sys::iptc_free(h);
