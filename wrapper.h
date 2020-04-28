@@ -2,3 +2,4 @@
 #include "libiptc/libiptc.h"
 #include "linux/netfilter/xt_bpf.h"
 #include "linux/netfilter/xt_NFQUEUE.h"
+#include "linux/netfilter/xt_comment.h"
